@@ -51,3 +51,25 @@ function exibeSomenteOsPares(array){
 console.log(exibeSomenteOsPares(valores));
 
 //---------------//---------------//---------------//---------------//---------------//
+
+// Crie uma função que filtre os números de um array que são múltiplos de 3 e maiores que 5.
+
+function multiplosDe3EmaioresQue5(array){
+    const listaCorreta = array.filter((num) => num % 3 == 0 && num > 5);
+    return listaCorreta;
+}
+
+console.log(multiplosDe3EmaioresQue5(valores));
+
+//---------------//---------------//---------------//---------------//---------------//
+
+// Crie uma função que receba um array de números e retorne a soma de todos os elementos.
+
+function somaDeNumeros(array){
+    const soma = array.reduce((iterador, elemento) =>{
+        return iterador + elemento;
+    }, 0);
+    return soma;
+}
+
+console.log(`A soma dos valores da lista é: ${somaDeNumeros(valores)}`);
